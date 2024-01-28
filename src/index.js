@@ -1,5 +1,8 @@
 function showAnswer(response){
-    alert(response.data.answer);
+    new Typewriter('#joke', {
+        strings: [(response.data.answer)],
+        autoStart: true,
+      });
 }
 
 function getJoke () {
@@ -13,3 +16,4 @@ axios.get(apiUrl).then(showAnswer);
 
 let jokeButton = document.querySelector("button");
 jokeButton.addEventListener("click",getJoke);
+
