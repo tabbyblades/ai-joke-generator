@@ -7,4 +7,11 @@ button {
     font-size: 30px;
     display: block;
     margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+button:hover{
+    color: pink;
+    background-color: white;
+    transition: all 200ms ease-in-out;
 }
